@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="Brasil.ico" type="image/x-icon">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagen dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+    <picture>
+        <source media="(max-width: 550px )" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="imagem flexivél">
+    </picture>
+
+    <h1>Reproduzindo Audio no seu HTML</h1>
+    <p>Vamos aprender a reproduzir áudios</p>
+    <audio preload="auto" autoplay controls>
+        <source src="midia/musica.mp3" type="audio/mpeg">
+        <source src="midia/musica.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir audio.</p>
+        <p><a href="midia/musica.mp3">clique aqui para fazer download do audio</a></p>
+    </audio>
+
+    <h1>Reproduzindo Videos no seu Html</h1>
+    <p>Vamos agora testar os Vídeos</p>
+    <video preload="auto" autoplay controls> 
+        <source src="midia/cavalo.mp4" type="video/mp4">
+        <p>Seu navegador não suporta este formato</p>
+    </video>
+</body>
+</html>
